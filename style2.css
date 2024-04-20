@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#page-2{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: lightgray; */
+    display: flex;
+    padding: 0vw 0vw;
+    /* padding-top: 0; */
+}
+
+#page2-part1{
+    height: 100vh;
+    width: 9%;
+    background-color: #c7c7c785;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5vw;
+    padding: 1vw 0;
+}
+
+#page2-part1 img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 5px;
+    cursor: pointer;
+}
+
+#page2-part1 .page2-part1-icons{
+    padding: 1vw 1vw;
+    background-color: #fff;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#page2-part1 .page2-part1-icons i{
+    font-size: 1.4vw;
+    position: relative;
+}
+
+#page2-part1 .page2-part1-icons span{
+    opacity: 0; /* Initially hide the text */
+    position: absolute; /* Position the text absolutely */
+    left: 5px;
+    transition: all ease 0.5s;
+}
+
+#page2-part1 .page2-part1-icons:hover span{
+    opacity: 1;
+    padding: 0.7vw 0.2vw;
+    /* background-color: #fff; */
+    border-radius: 50px;
+    /* border: none; */
+    position: relative;
+    /* display: inline; */
+}
+
+#page2-part1 .page2-part1-icons:hover{
+    color: white;
+    background-color: #129200;
+}
+
+#page2-part2{
+    width: 86%;
+    /* margin-top: 2vw; */
+    /* border: 4px solid black; */
+}
+
+#part2-header{
+    height: 15vh;
+    width: 105.7%;
+    background-color: #c7c7c785;
+    overflow-x: hidden;
+}
+
+#page-2 h1{
+    /* color: red; */
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+}
+
+#contact-btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+}
+
+#page-2 #contact-btns .ct-btn{
+    padding: 0.7vw 1.1vw;
+    font-size: 1vw;
+    font-weight: 550;
+    color: #000000b1;
+    background-color: white;
+    border-radius: 20px;
+    border: 1.4px solid #dadada;
+    transform: scale(1,1);
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+
+#page-2 #contact-btns .ct-btn:hover{
+    color: #fff;
+    background-color: #129200;
+    transform: scale(1.1,1.1);
+}
+
+#page-2 #contact-btns #searchbox{
+    margin-left: auto;
+    margin-right: 4vw;
+    border-radius: 20px;
+    border: 1px solid #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw 0.5vw;
+    box-shadow: 0 0 2px #dadada;
+}
+
+#page-2 #contact-btns #searchbox input{
+    outline: none;
+    padding: 0.5vw 1.1vw;
+    padding-left: 0;
+    font-size: 1.1vw;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#page-2 #contact-btns #searchbox i{
+    font-size: 1.5vw;
+    padding: 0.4vw 1.1vw;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#contacts{
+    min-height: 40vh;
+    width: 100%;
+    padding: 0.2vw 1vw;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    gap: 2.5vw;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+}
+
+#page-2 #contacts .contact-boxes{
+    width: 22%;
+    padding: 2vw 2.5vw;
+    margin-bottom: 2vw;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px #c2bebe;
+    position: relative;
+}
+
+@media (max-width: 850px){
+    #page-2 #contacts .contact-boxes{
+        width: 46%;
+    }
+}
+
+@media (max-width: 400px){
+    #page-2 #contacts .contact-boxes{
+        width: 76%;
+    }
+    #page-2 #contacts .contact-boxes img{
+        height: 100px !important;
+        width: 100px !important;
+    }
+    #contacts{
+        justify-content: center;
+    }
+}
+
+.inner-contact-box{
+    height: 100%;
+    width: 100%;
+    padding: 1vw 2.5vw;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0.95;
+    z-index: 9;
+    transform: scale(0,0);
+    transition: all ease 0.6s;
+}
+
+.inner-contact-box p{
+    margin: 0.2vw 0 !important;
+    color: #000;
+    font-weight: 550 !important;
+    text-align: justify;
+}
+
+.inner-contact-box button{
+    padding: 0.2vw 0.8vw;
+    border: 2px solid #129200;
+    border-radius: 20px;
+    /* background-color: #129200; */
+    /* color: #fff; */
+    cursor: pointer;
+}
+
+#page-2 #contacts .contact-boxes h3{
+    text-align: center;
+    padding: 0.5vw 0.7vw;
+    margin-bottom: 1.2vw;
+    font-weight: 500;
+    font-size: 0.95vw;
+    color: #fff;
+    background-color: #129200;
+    border-radius: 20px;
+}
+
+#page-2 #contacts .contact-boxes img{
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page-2 #contacts .contact-boxes p{
+    margin-top: 0.6vw;
+    margin-bottom: 0.3vw;
+    font-size: 1.2vw;
+    font-weight: 800;
+}
+
+#page-2 #contacts .contact-boxes h5{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 0.9vw;
+    color: #dadada;
+    margin-bottom: 1.6vw;
+    cursor: pointer;
+}
+
+#page-2 #contacts .contact-boxes #useful-btns{
+    display: flex;
+    gap: 1vw;
+}
+
+#page-2 #contacts .contact-boxes #useful-btns .use-btn{
+    padding: 0.8vw 1.4vw;
+    border: 1px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1,1);
+    transition: all ease-out 0.4s;
+}
+
+#page-2 #contacts .contact-boxes #useful-btns .use-btn:hover{
+    background-color: lightgrey;
+    transform: scale(1.1,1.1);
+}
+
+#page-2 #contacts .contact-boxes #useful-btns .use-btn i{
+    font-size: 1.2vw;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
